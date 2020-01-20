@@ -12,15 +12,18 @@ body {
 
 h1, h2 {
     margin: 0;
-}
+} 
 
-header.alt {
+/* Header */
+
+.alt {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     top: 0;
-    background-color: #fff;
+    text-shadow: 1px 1px 2px black;
+    position: absolute;
 }
 
 a {
@@ -31,21 +34,23 @@ a {
         display: inline-block;
     }
 
-    li a {
-        color: rgb(46, 46, 46);
+    header li a {
+        color: white;
         font-size: 1.2em;
-        padding: 0.6em 1em;
+        padding: 0.5em 1em;
     }
 
     ul li a:hover {
-        transition-duration: 0.4s;
-        background-color: rgb(41, 41, 41);
-        color: white;
+        transition-duration: 0.5s;
+        font-size: 1.25em;
+        color: rgb(255, 171, 102);
     }
 
 li {
     list-style: none;
 }
+
+/* Home */
 
 .home {
     height: 100vh;
@@ -53,10 +58,9 @@ li {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url(../Images/Indah_front_print-resblur.jpg) no-repeat scroll bottom;
+    background: url(../Images/Indah_front_print-resblur.jpg) no-repeat fixed center;
     color: #fff;
-    text-shadow: 1px 2px rgb(32, 32, 32);
-    height: 850px;
+    text-shadow: 1px 1px 2px black;
 }
 
     .home h1 {
@@ -79,6 +83,8 @@ li {
         padding: 0.3em 0.8em;
         line-height: 0.8;
     }
+
+/* Main */
 
 .phrase {
     text-align: center;
@@ -113,6 +119,7 @@ li {
         color: #7a7a7a;
         line-height: 1.6;
         box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     }
 
     .box .content {
@@ -124,11 +131,13 @@ li {
     }
 
     .content h2 {
-        color: rgb(43, 43, 43);
+        color: black;
         font-weight: 500;
         font-size: 2em;
         margin: 0;
     }
+
+/* Footer */
 
 .footer {
     display: flex;
@@ -142,8 +151,15 @@ li {
         display: inline-block;
     }
 
+    footer li a {
+        color: black;
+        font-size: 1.2em;
+        padding: 0.6em 1em;
+    }
+
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
+    background-color: #292929;
 }
